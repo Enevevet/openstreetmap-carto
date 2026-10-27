@@ -1605,6 +1605,15 @@
     }
   }
 
+  [feature = 'amenity_table'][zoom >= 17]::amenity {
+    marker-file: url('symbols/amenity/table.svg');
+    marker-fill: @man-made-icon;
+    marker-clip: false;
+    [int_access = 'restricted'] {
+      marker-opacity: @private-opacity;
+    }
+  }
+
   [feature = 'amenity_waste_basket'][zoom >= 19]::amenity {
     marker-file: url('symbols/amenity/waste_basket.svg');
     marker-fill: @man-made-icon;
